@@ -3,33 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <title>De Dil Se</title>
     <style>
-        #ourpartners img {
-            border-radius: 50%;
+        #navImg {
+            width: 100%;
         }
-        #ourpartners {
+        * {
+            margin: 0;
+            font-family: "Comfortaa";
+        }
+        hr {
+            background-color: gray;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+        .randomImg {
+            width:50%;
+        }
+
+        /* Copied code from branch contactUs file contactUs.html on 1/22/2024 @ ~6:18PM EST*/
+        nav {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+            padding: 0 25px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li a {
+            color: #304562;
+            font-size: 18px;
+            margin: 0 25px;
+        }
+        /* end */
+
+        #ourpartners img {
+            border: 5px solid black;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+        }
+        #ourpartners { 
             display:flex;
             justify-content: space-around;
+            margin-top: 2vh;
+            margin-bottom: 11vh;
+            flex-wrap: wrap;
+            text-align: center;
         }
+        #ourpartnerstext {
+            color:coral;
+            margin-top: 7vh;
+        }
+        .partnertag {
+            margin-top: 7vh;
+            margin-bottom: 2vh;
+        }
+        .centeredText {
+            text-align: center;
+            padding: 10px 10px;
+        }
+        #imgBar {
+            font-size: 0;
+            margin-top:5vh;
+        }
+        #dedilse {
+            text-align: center;
+        }
+        .dedilseInnerText {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        
     </style>
 </head>
 <body>
-    <header>
-        <div class="navbar"></div>
-        <ul class="abcdefg">
-            <li><a href="ourstory.html">Our Story</a></li>
-            <li><a href="ourprojects.html">Our Projects</a></li>
-            <li><img src="https://"></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="getstarted.html">Get Started</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
+    <nav>
+        <ul class="topLeft">
+            <li><a href="ourStory.html">OUR STORY</a></li>
+            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
         </ul>
-    </header>
-    <div id="ourpartners">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <ul class="topRight">
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="getStarted.html">GET STARTED</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <img src="./img/Community-Foodbank-of-New-Jersey-distribution.webp" id="navImg" alt="Food Bank">
+    <hr>
+    <div id="dedilse">
+        <h1 class="centeredText">DE DIL SE</h1>
+        <!-- Add breaks given text -->
+        <p class="dedilseInnerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eligendi. Est temporibus repellendus sint, inventore ratione laboriosam amet veritatis aliquam esse, saepe ab eum error animi voluptas. Libero, quam sunt?</p>
+        <br>
+        <p class="dedilseInnerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsum?</p>
     </div>
+    <h2 class="centeredText" id="ourpartnerstext">OUR PARTNERS</h2>
+    <div id="ourpartners">
+        <div id="partner1">
+            <img src="./img/partner.png" alt="partner1">
+            <p id="partner1tag" class="partnertag">Lorem Ipsum</p>
+        </div>
+        <div id="partner2">
+            <img src="./img/partner.png" alt="partner2">
+            <p id="partner2tag" class="partnertag">Lorem Ipsum</p>
+        </div>
+        <div id="partner3">
+            <img src="./img/partner.png" alt="partner1">
+            <p id="partner3tag" class="partnertag">Lorem Ipsum</p>
+        </div>
+    </div>
+    <hr>
+    <div id="imgBar">
+        <img src="./img/r1.jpeg" alt="Some image1" class="randomImg">
+        <img src="./img/r2.webp" alt="Some image2" class="randomImg">
+    </div>
+    <hr>
+    <footer>
+        <!-- Probably to use someone else's footer -->
+    </footer>
 </body>
 </html>
