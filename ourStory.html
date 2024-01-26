@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story</title>
+    <title>Our Projects</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        nav ul li a {
+            color: black;
+            font-size: 13px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .nav-wrapper {
+            background-color: white;
+        }
+        hr {
+            margin-top: 50px;
+        }
+
+        .img1 {
+            width: 400px;
+            padding: 30px;
+        }
+        .project-desc1 {
+            padding-top: 100px;
+            padding-right: 50px;
+        }
+    </style>
 </head>
-
 <body>
-    <h2><img src="https://github.com/bca-code-for-charity/dedilse-web/blob/main/img/sample.png?raw=true"
-            style="float:left;padding-right:12px" alt="image" width="500" height="500" style="padding: 5;">
-        <h1>Our Story</h1>
-        <h4 style="font-family: 'Comfortaa', sans-serif;" style="font-size: larger;">Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Excepturi delectus est molestias vitae aliquid ipsum voluptatem eaque
-            molestiae voluptatum earum corporis porro aspernatur ea incidunt, id quo aut quasi. Magni ducimus ab
-            adipisci iure, sequi id commodi debitis at, quibusdam, aliquam aliquid. Quis maxime earum repellendus
-            laboriosam inventore. Ab, distinctio.</h4><br>
-        <h4 style="font-family: 'Comfortaa', sans-serif;" style="font-size: larger;" style="margin-left: px;">Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime at nemo. Odio eaque possimus aspernatur
-            molestias maiores quod, recusandae, ut sunt id quaerat totam nostrum fuga dicta quae eligendi nesciunt
-            soluta laboriosam ea! Repudiandae, sit? Blanditiis aliquam vero consequatur labore eum sint maiores
-            explicabo, sapiente, neque corrupti rerum exercitationem.</h4><br>
-        <h4 style="font-family: 'Comfortaa', sans-serif;" style="font-size: larger;">Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Provident itaque praesentium repellat quasi est ullam assumenda laudantium
-            quidem consequuntur veritatis. Quibusdam nisi voluptate at suscipit ut facilis illum, sed neque?</h4>
-    </h2>
-    <br style="clear:both" />
-</body>
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="left">
+                <li><a href="ourStory.html">OUR STORY</a></li>
+                <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="getStarted.html">GET STARTED</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <h5 align="center">Our Story</h5>
+    <hr>
+
+    <div class="row">
+        <div class="col s5">
+            <div class="img1">
+                <img class="responsive-img" src="img/sample.png"> 
+            </div>
+        </div>
+        <div class="col s7">
+            <div class="project-desc1">
+                <h6>Our Story</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam repellendus nemo facilis sit tempore eaque illo fuga sint inventore! Quisquam quis iure iste fugit! Adipisci, dolorem dolores? Tempora nemo fugiat reiciendis ut laboriosam vel beatae totam, numquam optio nobis sequi adipisci accusantium, explicabo sapiente aspernatur incidunt consectetur. Esse eveniet nobis iusto natus aliquid ut eius amet, ab veritatis molestiae eum modi quibusdam corrupti expedita iste temporibus dolores? Commodi error dolorem perspiciatis totam libero. Vitae necessitatibus maiores veritatis quaerat atque ad ipsam harum quibusdam facere, corrupti in, aliquid libero? Libero incidunt excepturi ipsum eligendi corrupti odit delectus eius dolore quisquam autem!</p>  
+            </div>
+        </div>  
+    </div>
+    
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Auto-initialize Materialize elements (Note - more specific initialization may be required for certain elements)-->
+    <script> M.AutoInit();</script>
+</body>
 </html>
