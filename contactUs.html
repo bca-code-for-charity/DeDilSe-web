@@ -4,57 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
     <style>
-        nav ul li a {
-            color: black;
-            font-size: 13px;
-            margin-left: 25px;
-            margin-right: 25px;
+        body {
+            margin: 0;
+            padding: 0;
         }
-        .navbar {
+        nav {
             background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+            padding: 0 25px;
         }
-        hr {
-            margin-top: 50px;
+        nav ul {
+            display: flex;
+            list-style: none;
         }
-        contactCont {
+        nav ul li a {
+            color: #304562;
+            font-size: 18px;
+            margin: 0 25px;
+        }
+        .contactCont {
+            font-weight: bold;
             display: inline-flex;
-            padding: 22px 30px;
+            padding: 25px 35px; 
             justify-content: center;
             align-items: center;
             gap: 9px;
             border-radius: 21px;
             background: rgba(217, 217, 217, 0.71);
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+
+        .navBanner {
+            width: 100%;
+            height: 489px;
+            border: 1px solid #304562;
+            background: url(img/dedilseFigmaBanner.png), lightgray 0px -139.5px / 100% 294.479% no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        form div {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            width: 803px;
+            padding: 15px;
+            font-size: 20px;
+            border: 1px solid #C45A4C;
+            background: #FFF;
+        }
+
+        form textarea {
+            height: 290px;
+            resize: none;
+            border: 1px solid #C45A4C;
+        }
+
+        button {
+            width: 282.912px;
+            height: 102px;
+            color: #FFF;
+            background-color: #C45A4C;
+            border: none;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
         
+
     </style>
 </head>
 <body>
     <nav>
-        <div class="navbar">
-            <ul class="topLeft">
-                <li><a href="ourStory.html">OUR STORY</a></li>
-                <li><a href="ourProjects.html">OUR PROJECTS</a></li>
-            </ul>
-            <ul class="topRight">
-                <li><a href="donate.html">DONATE</a></li>
-                <li><a href="getStarted.html">GET STARTED</a></li>
-                <li><a href="contactUs.html">CONTACT US</a></li>
-            </ul>
-        </div>
+        <ul class="topLeft">
+            <li><a href="ourStory.html">OUR STORY</a></li>
+            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+        </ul>
+        <ul class="topRight">
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="getStarted.html">GET STARTED</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
     </nav>
 
-    <h5 align = "center" class="contactCont">CONTACT US</h5>
-    <hr>
+    <div class="navBanner">
+        <h5 class="contactCont">CONTACT US</h5>
+    </div>
+
+    <form>
+        <div>
+            <label for="name">Name</label> <br />
+            <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+            <label for="email">Email</label> <br />
+            <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label> <br />
+            <input type="tel" name="phone" id="phone" />
+        </div>
+
+        <div>
+            <label for="message">Message</label> <br />
+            <textarea name="message" id="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <script> M.AutoInit();</script>
+>>>>>>> Stashed changes
 </body>
 </html>
