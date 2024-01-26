@@ -35,19 +35,21 @@
         }
         nav ul {
             display: flex;
+            justify-content: space-between;
             list-style: none;
         }
         nav ul li a {
             color: #304562;
             font-size: 18px;
             margin: 0 25px;
+            text-decoration: none;
         }
+        
         /* end */
 
         #ourpartners img {
             border: 5px solid black;
             border-radius: 50%;
-            aspect-ratio: 1 / 1;
         }
         #ourpartners { 
             display:flex;
@@ -80,6 +82,16 @@
             margin-left: 5vw;
             margin-right: 5vw;
         }
+
+        .logo {
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            width: 136px;
+            height: 136px;
+            right: 47%;
+            top: 1%;
+        }
         
     </style>
 </head>
@@ -88,7 +100,8 @@
         <ul class="topLeft">
             <li><a href="ourStory.html">OUR STORY</a></li>
             <li><a href="ourProjects.html">OUR PROJECTS</a></li>
-        </ul>
+       </ul>
+        <img class="logo" src="img/dedilseLogo.png">
         <ul class="topRight">
             <li><a href="donate.html">DONATE</a></li>
             <li><a href="getStarted.html">GET STARTED</a></li>
