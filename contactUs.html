@@ -9,30 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <style>
         body {
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 68px;
-            padding: 0 25px;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
         nav ul li a {
-            color: #304562;
-            font-size: 18px;
-            margin: 0 25px;
+            color: black;
+            font-size: 13px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .nav-wrapper {
+            background-color: white;
         }
         .contactCont {
             font-weight: bold;
@@ -48,10 +46,11 @@
             position: absolute;
             top: 37%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -25%);
         }
 
         .navBanner {
+            position: relative;
             width: 100%;
             height: 489px;
             border: 1px solid #304562;
@@ -79,7 +78,7 @@
         form textarea {
             width: 803px;
             padding: 15px;
-            font-size: 20px;
+            font-size: 30px;
             border: 1px solid #C45A4C;
             background: #FFF;
         }
@@ -98,38 +97,60 @@
             border: none;
             font-size: 20px;
             border-radius: 20px;
+            margin-bottom: 100px;
         }
 
         footer {
-            width: 1920px;
+            width: 100%; 
             height: 520px;
-            flex-shrink: 0;
-            background-color: #304562;
-            color: #FFF; 
+            background-color: #C45A4C;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .footerContent {
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
         }
 
+        .footerWords {
+            display: flex;
+            gap: 82px; 
+            justify-content: center; 
+            align-items: center; 
+           
+        }
+
+        .footerWords a {
+            color: #FFF; 
+            font-size: 20px; 
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+
+        .footerWords a:hover {
+            color: #E0E0E0; 
+        }
         
 
     </style>
 </head>
 <body>
     <nav>
-        <ul class="topLeft">
-            <li><a href="ourStory.html">OUR STORY</a></li>
-            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
-        </ul>
-        <ul class="topRight">
-            <li><a href="donate.html">DONATE</a></li>
-            <li><a href="getStarted.html">GET STARTED</a></li>
-            <li><a href="contactUs.html">CONTACT US</a></li>
-        </ul>
+        <div class="nav-wrapper">
+            <ul class="left">
+                <li><a href="ourStory.html">OUR STORY</a></li>
+                <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="getStarted.html">GET STARTED</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div class="navBanner">
@@ -163,9 +184,17 @@
 
     <footer>
         <div class="footerContent">
-           
+            <div class="footerWords">
+                <a href="ourStory.html">OUR STORY</a>
+                <a href="ourProjects.html">OUR PROJECTS</a>
+                <a href="donate.html">DONATE</a>
+                <a href="getStarted.html">GET STARTED</a>
+                <a href="contactUs.html">CONTACT US</a>
+            </div>
         </div>
     </footer>
+    
+    
 
 
 
