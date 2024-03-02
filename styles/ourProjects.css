@@ -1,0 +1,83 @@
+.row {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding: 0 100px;
+}
+
+.row:nth-child(odd) {
+    grid-template-columns: 7fr 5fr;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-wrapper {
+    background-color: white;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.img {
+    width: 500px;
+    padding: 30px;
+    float: right;
+}
+
+.imgLeft {
+    float: left !important;
+}
+
+.project-desc {
+    padding-top: 100px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+.project-desc h5 {
+    padding-left: 20px;
+}
+
+.page-footer {
+    background-color: #c85c4c;
+    padding-bottom: 50px;
+}
+
+.page-footer a {
+    margin: 36px;
+    color: white;
+}
+
+.row2-col1 p {
+    padding-bottom: 0px;
+    padding-left: 35px;
+    font-size: 12px;
+
+}
+
+.row2-col2 p {
+    padding-bottom: 0px;
+    padding-left: 60px;
+    font-size: 12px;
+}
+
+.row3-col1 p {
+    padding-bottom: 0px;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+.row3-col2 p {
+    padding-bottom: 0px;
+    padding-left: 60px;
+    font-size: 12px;
+}
+
+.title {
+    padding-top: 50px;
+}
