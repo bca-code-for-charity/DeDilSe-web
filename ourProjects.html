@@ -5,33 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Projects</title>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/ourProjects.css">
+    <link rel="stylesheet" href="./styles/ourStory.css">
+    <link rel="stylesheet" href="./styles/nav.css">
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper">
-            <ul class="left">
-                <li><a href="ourStory.html">OUR STORY</a></li>
-                <li><a href="ourProjects.html">OUR PROJECTS</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="donate.html">DONATE</a></li>
-                <li><a href="getStarted.html">GET STARTED</a></li>
-                <li><a href="contactUs.html">CONTACT US</a></li>
-            </ul>
-        </div>
+        <ul class="topLeft">
+            <li><a href="ourStory.html" class="ourStory">OUR STORY</a></li>
+            <div class="dropdown">
+                <a href="ourStory.html">ABOUT US</a>
+                <a href="timeline.html">TIMELINE</a>
+            </div>
+            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+        </ul>
+        <img class="logo" src="img/dedilseLogo.png" alt="De Dil Se Logo">
+        <ul class="topRight">
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
     </nav>
 
-    <h5 align="center" class="title">PROJECTS</h5>
-    <hr>
+    <img src="./img/Community-Foodbank-of-New-Jersey-distribution.webp" id="navImg"
+        alt="Community Food Bank Distribution" class="headerImg">
+    
+    <div class="imgText">
+        <h1>OUR PROJECTS</h1>
+    </div>
+    
 
-    <div class="row">
+    <div class="row" id="p1">
         <div class="">
             <div class="img imgLeft">
                 <img class="responsive-img" src="img/sample.png"> 
@@ -44,7 +51,7 @@
             </div>
         </div>  
     </div>
-    <div class="row">
+    <div class="row" id="p2">
         
         <div class="">
             <div class="project-desc">
@@ -58,7 +65,7 @@
             </div>
         </div> 
     </div>
-    <div class="row">
+    <div class="row" id="p3">
         <div class="">
             <div class="img imgLeft">
                 <img class="responsive-img" src="img/sample.png"> 
@@ -71,7 +78,7 @@
             </div>
         </div>  
     </div>
-    <div class="row">
+    <div class="row" id="p4">
         <div class="">
             <div class="project-desc">
                 <h5>Project Name #4</h5>
@@ -87,45 +94,23 @@
     </div>
     
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
+    <footer>
+        <ul class="bottom-links">
+            <li>
                 <a href="ourStory.html">OUR STORY</a>
+                <a href="ourStory.html" class="bottom-footer bottom-footer-1">ABOUT US</a>
+                <a href="timeline.html" class="bottom-footer">TIMELINE</a>
+            </li>
+            <li>
                 <a href="ourProjects.html">OUR PROJECTS</a>
-                <a href="donate.html">DONATE</a>
-                <a href="getStarted.html">GET STARTED</a>
-                <a href="contactUs.html">CONTACT US</a>
-            </div>
-            <div class="row">
-                <div class="row2-col1">
-                    <div class="col s2">
-                        <p>ABOUT US</p>
-                    </div>
-                </div>
-                <div class="row2-col2">
-                    <div class="col s3">
-                        <p>PROJECT #1</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row3-col1">
-                    <div class="col s2">
-                        <p>TIMELINE</p>
-                    </div>
-                </div>
-                <div class="row3-col2">
-                    <div class="col s3">
-                        <p>PROJECT #2</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <a href="ourProjects.html#p1" class="bottom-footer bottom-footer-1">PROJECT #1</a>
+                <a href="ourProjects.html#p2" class="bottom-footer">PROJECT #2</a>
+            </li>
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
     </footer>
-    <!-- Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Auto-initialize Materialize elements (Note - more specific initialization may be required for certain elements)-->
-    <script> M.AutoInit();</script>
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>

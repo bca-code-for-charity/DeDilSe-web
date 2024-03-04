@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/nav.css">
     
     <title>De Dil Se</title>
 </head>
@@ -16,20 +17,24 @@
 <body>
     <nav>
         <ul class="topLeft">
-            <li><a href="ourStory.html">OUR STORY</a></li>
+            <li><a href="ourStory.html" class="ourStory">OUR STORY</a></li>
+            <div class="dropdown">
+                <a href="ourStory.html">ABOUT US</a>
+                <a href="timeline.html">TIMELINE</a>
+            </div>
             <li><a href="ourProjects.html">OUR PROJECTS</a></li>
         </ul>
         <img class="logo" src="img/dedilseLogo.png" alt="De Dil Se Logo">
         <ul class="topRight">
             <li><a href="donate.html">DONATE</a></li>
-            <li><a href="getStarted.html">GET STARTED</a></li>
             <li><a href="contactUs.html">CONTACT US</a></li>
         </ul>
     </nav>
 
     <img src="./img/Community-Foodbank-of-New-Jersey-distribution.webp" id="navImg"
-        alt="Community Food Bank Distribution">
+        alt="Community Food Bank Distribution" class="headerImg">
     <hr>
+
     <div id="dedilse">
         <h1 class="centeredText">DE DIL SE</h1>
         <!-- Add breaks given text -->
@@ -62,13 +67,22 @@
     <hr>
     <footer>
         <ul class="bottom-links">
-            <li><a href="ourStory.html">OUR STORY</a></li>
-            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+            <li>
+                <a href="ourStory.html">OUR STORY</a>
+                <a href="ourStory.html" class="bottom-footer bottom-footer-1">ABOUT US</a>
+                <a href="timeline.html" class="bottom-footer">TIMELINE</a>
+            </li>
+            <li>
+                <a href="ourProjects.html">OUR PROJECTS</a>
+                <a href="ourProjects.html#p1" class="bottom-footer bottom-footer-1">PROJECT #1</a>
+                <a href="ourProjects.html#p2" class="bottom-footer">PROJECT #2</a>
+            </li>
             <li><a href="donate.html">DONATE</a></li>
-            <li><a href="getStarted.html">GET STARTED</a></li>
             <li><a href="contactUs.html">CONTACT US</a></li>
         </ul>
     </footer>
+
+    <script src="./scripts/nav.js"></script>
 </body>
 
 </html>
