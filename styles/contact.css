@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-wrapper {
+    background-color: white;
+}
+
+.contactCont {
+    font-weight: bold;
+    display: inline-flex;
+    padding: 25px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    border-radius: 21px;
+    background: rgba(217, 217, 217, 0.71);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.navBanner {
+    position: relative;
+    width: 100%;
+    height: 489px;
+    border: 1px solid #304562;
+    background: url('../img/dedilseFigmaBanner.png'), lightgray 0px -139.5px / 100% 294.479% no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 803px;
+    padding: 15px;
+    font-size: 30px;
+    border: 1px solid #C45A4C;
+    background: #FFF;
+}
+
+form textarea {
+    height: 290px;
+    resize: none;
+    border: 1px solid #C45A4C;
+}
+
+button {
+    width: 165.912px;
+    height: 50px;
+    color: #FFF;
+    background-color: #C45A4C;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 520px;
+    background-color: #C45A4C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footerWords {
+    display: flex;
+    gap: 82px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerWords a {
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerWords a:hover {
+    color: #E0E0E0;
+}
