@@ -52,6 +52,7 @@ nav ul li a {
     width: 125px;
     height: 125px;
     margin-top:30px;
+    z-index: 3;
 }
 
 footer {
