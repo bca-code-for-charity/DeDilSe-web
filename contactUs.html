@@ -19,69 +19,73 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="./styles/nav.css">
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper">
-            <ul class="left">
-                <li><a href="ourStory.html">OUR STORY</a></li>
-                <li><a href="ourProjects.html">OUR PROJECTS</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="donate.html">DONATE</a></li>
-                <li><a href="getStarted.html">GET STARTED</a></li>
-                <li><a href="contactUs.html">CONTACT US</a></li>
-            </ul>
-        </div>
+        <ul class="topLeft">
+            <li><a href="ourStory.html" class="ourStory">OUR STORY</a></li>
+            <div class="dropdown">
+                <a href="ourStory.html">ABOUT US</a>
+                <a href="timeline.html">TIMELINE</a>
+            </div>
+            <li><a href="ourProjects.html">OUR PROJECTS</a></li>
+        </ul>
+        <img class="logo" src="img/dedilseLogo.png" alt="De Dil Se Logo">
+        <ul class="topRight">
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
     </nav>
-
     <div class="navBanner">
         <h5 class="contactCont">CONTACT US</h5>
     </div>
 
     <form>
         <div>
-            <label for="name">Name</label> <br />
-            <input type="text" name="name" id="name" />
+            <label for="name">Name</label> <br/>
+            <input type="text" name="name" id="name"/>
         </div>
 
         <div>
-            <label for="email">Email</label> <br />
-            <input type="email" name="email" id="email" />
+            <label for="email">Email</label> <br/>
+            <input type="email" name="email" id="email"/>
         </div>
 
         <div>
-            <label for="phone">Phone Number</label> <br />
+            <label for="phone">Phone Number</label> <br/>
             <input type="tel" name="phone" id="phone" />
         </div>
 
         <div>
-            <label for="message">Message</label> <br />
-            <textarea name="message" id="message" rows="4"></textarea>
+            <label for="message">Message</label> <br/>
+            <textarea name="message" id="message"></textarea>
         </div>
-
-        <button type="submit">SEND</button>
+        
+        <div>
+            <button type="submit">SEND</button>
+        </div>
     </form>
 
-
     <footer>
-        <div class="footerContent">
-            <div class="footerWords">
+        <ul class="bottom-links">
+            <li>
                 <a href="ourStory.html">OUR STORY</a>
+                <a href="ourStory.html" class="bottom-footer bottom-footer-1">ABOUT US</a>
+                <a href="timeline.html" class="bottom-footer">TIMELINE</a>
+            </li>
+            <li>
                 <a href="ourProjects.html">OUR PROJECTS</a>
-                <a href="donate.html">DONATE</a>
-                <a href="getStarted.html">GET STARTED</a>
-                <a href="contactUs.html">CONTACT US</a>
-            </div>
-        </div>
+                <a href="ourProjects.html#p1" class="bottom-footer bottom-footer-1">PROJECT #1</a>
+                <a href="ourProjects.html#p2" class="bottom-footer">PROJECT #2</a>
+            </li>
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
     </footer>
     
-    
-
-
-
+    <script src="./scripts/nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script> M.AutoInit();</script>
-
 </body>
 </html>
