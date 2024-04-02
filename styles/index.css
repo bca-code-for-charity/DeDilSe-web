@@ -48,24 +48,32 @@ hr {
 }
 
 #imgBar {
-    margin-top: 3vh;
+    margin: 12vh 0 7vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 #imgBar img {
-    border: 1px solid black;
+    border-right: 1px solid black;
     max-width: 100%;
     height: auto;
 }
 
+#imgBar img:last-of-type {
+    border-right: none;
+}
+
 #dedilse {
     text-align: center;
+    margin: 4vh auto 0;
+    width: 70vw;
 }
 
 .dedilseInnerText {
     margin: 3vh 5vw;
+    line-height: 1.5rem;
+    color: #304562;
 }
 
 /* Media Queries */

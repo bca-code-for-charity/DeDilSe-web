@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    background-color: white;
+}
+
+.contactCont {
+    font-weight: bold;
+    padding: 2rem 2.5rem;
+    border-radius: 1.3rem;
+    background: #d9d9d9b5;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    text-align: center;
+    width: max-content;
+    margin: 37vh 50vw 37vh;
+    transform: translate(-50%, -25%);
+}
+
+.navBanner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #304562;
+    background: url('../img/dedilseFigmaBanner.png'), #304562 0px -140px / 100% 295% no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+form div {
+    margin-bottom: 1.1rem;
+}
+
+form label {
+    font-weight: bold;
+    color: black !important;
+}
+
+form input,
+form textarea {
+    width: 50vw;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background: #FFF;
+}
+
+form textarea {
+    height: 30vh;
+    resize: none;
+    border: 1px solid #C45A4C;
+    margin: 5vh auto;
+}
+
+button {
+    width: 10vw;
+    height: 3rem;
+    color: #FFF;
+    background-color: #C45A4C;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    margin-bottom: 6vh;
+}
